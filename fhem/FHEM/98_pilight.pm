@@ -166,6 +166,7 @@ sub commit
 	case 'rev1_switch' 	{ $code = $code . "\"id\":\"$systemcode\", \"unit\":$unit,\"$param\":1"}
 	case 'rev2_switch'	{ $code = $code . "\"id\":\"$systemcode\", \"unit\":$unit,\"$param\":1"}
 	case 'rev3_switch'	{ $code = $code . "\"id\":\"$systemcode\", \"unit\":$unit,\"$param\":1"}
+        case 'generic_switch'   { $code = $code . "\"id\":$housecode, \"$param\":1"}
 	}
   }
   $code = $code . '}';
